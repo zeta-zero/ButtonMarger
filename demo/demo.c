@@ -23,10 +23,12 @@ int main(void)
     z_btnmgr_init();
 
     // demo 0
-    z_btnmgr_creategBtn(&demo0_btn,demo0_btn_read,NULL);
+    z_btnmgr_creategBtn(&demo0_btn, demo0_btn_read, NULL);
+    z_btnmgr_regBtn(&demo0_btn);
 
     // demo 1
     z_btnmgr_creategBtn(&demo1_btn, demo1_btn_read, button_event);
+    z_btnmgr_regBtn(&demo1_btn);
 
     // demo 2
     z_btnmgr_creategBtn(&demo2_btn1, demo2_btn1_read , button_event);
@@ -59,28 +61,28 @@ void button_event(z_btn_args_t _args)
     // demo 1
     if (_args.Obj == &demo1_btn) {
         switch (_args.State) {
-        case BtnSta_Pressing: {
+            case BtnSta_Pressing: {
 
-        }break;
-        case BtnSta_Pressed: {
+            }break;
+            case BtnSta_Pressed: {
 
-        }break;
-        case BtnSta_Releasing: {
+            }break;
+            case BtnSta_Releasing: {
 
-        }break;
-        case BtnSta_Clicked: {
+            }break;
+            case BtnSta_Clicked: {
 
-        }break;
-        case BtnSta_DoubleClicked: {
+            }break;
+            case BtnSta_DoubleClicked: {
 
-        }break;
-        case BtnSta_LongPressing: {
+            }break;
+            case BtnSta_LongPressing: {
 
-        }break;
-        case BtnSta_LongPressed_Repeat: {
+            }break;
+            case BtnSta_LongPressed_Repeat: {
 
-        }break;
-        default:break;
+            }break;
+            default:break;
         }
     }
     // demo 2

@@ -5,8 +5,8 @@
                    Includes click, double - click, long - press functions.
 ----------------------------------------------------------------------
 @author          : Zeta-Zero
- Release Version : V0.01
- Release Date    : 2023/6/21
+ Release Version : V1.00
+ Release Date    : 2023/12/11
 ----------------------------------------------------------------------
 @attention       :
     Licensed under the Apache License, Version 2.0 (the "License");
